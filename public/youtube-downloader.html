@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="youtube-downloader.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="youtube-downloader.html">YouTube Downloader</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+        <span id="user-info"></span>
+    </nav>
+    <main>
+        <h1>YouTube Downloader</h1>
+        <form id="youtube-form">
+            <label for="video-url">Video URL</label>
+            <input type="text" id="video-url" required>
+            <label for="resolution">Resolution</label>
+            <select id="resolution">
+                <option value="360p">360p</option>
+                <option value="480p">480p</option>
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+    </main>
+    <script src="youtube-downloader.js"></script>
+</body>
+</html>
